@@ -10,9 +10,15 @@ class CCTracker extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Crypto Tracker',
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.blue[900],
+        brightness: Brightness.light,
+        primaryColor: Colors.teal[400],
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        accentColor: Colors.amber[700],
       ),
       home: CCList(),
     );
